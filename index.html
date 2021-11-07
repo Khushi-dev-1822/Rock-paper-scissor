@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@600&display=swap"
+        rel="stylesheet">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- SECTION -->
+        <div class="score-board">
+            <div class="title">
+                <img src="images/logo.svg">
+            </div>
+            <div class="score">
+                <p>SCORE</p>
+                <h1>0</h1>
+            </div>
+        </div>
+        <!-- SECTION -->
+        <div class="hands">
+            <div class="paper hand">
+                <img src="images/Paper.png" onclick="pickUserHand('paper')">
+            </div>
+            <div class="scissor hand">
+                <img src="images/scissors.png" onclick="pickUserHand('scissors')">
+            </div>
+            <div class=" rock hand">
+                <img src="images/rock.png" onclick="pickUserHand('rock')">
+            </div>
+        </div>
+
+
+        <div class="contest ">
+            <div class="user-hand">
+                <h1>YOU PICKED</h1>
+                <div class="handimagecontainer">
+                    <img id="userPickImage" src="" alt="">
+                </div>
+            </div>
+            <div class="refree">
+                <div class="decision">
+                    <h1>YOU WIN</h1>
+                    <div class="newgame">PLAY AGAIN</div>
+                </div>
+            </div>
+            <div class="house-hand">
+                <h1>THE HOUSE PICKED</h1>
+                <div class="handimagecontainer">
+                    <img id="computerPickImage" src="images/Scissors.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src=" js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+}
+.score-board {
+  border: 1px solid white;
+  width: 700px;
+  border-radius: 20px;
+  margin-top: 50px;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.score {
+  width: 150px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.score h1 {
+  color: #565468;
+}
+.score p {
+  color: #2a45c2;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+}
+.hands {
+  width: 476px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  background-image: url(images/triangle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.scissor {
+  margin-left: 20px;
+}
+
+.paper {
+  margin-right: 20px;
+}
+.hand {
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.hand:hover {
+  transform: translate3d(0px, -8px, 0px);
+}
+
+.hidden {
+  display: none !important;
+}
+.contest {
+  width: 900px;
+  display: none;
+  margin-top: 50px;
+  justify-content: center;
+}
+.contest > div {
+  flex: 1;
+}
+.contest img {
+  width: 275px;
+  height: 275px;
+}
+.contest h1 {
+  color: white;
+  font-size: 20px;
+  margin: 20px 0px 50px 0px;
+  text-align: center;
+}
+.handimagecontainer {
+  display: flex;
+  justify-content: center;
+}
+.refree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.refree h1 {
+  font-size: 45px;
+}
+.newgame {
+  background-color: #fff;
+
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: hsl(229, 25%, 31%);
+  transition: all 0.15s;
+}
+.newgame:hover {
+  background-color: bisque;
+  transform: translate3d(0px, -2px, 0px);
+}
+
+@media (min-width: 300px) and (max-width: 499px) {
+  .score-board {
+    width: 400px;
+  }
+  .contest {
+    width: 400px;
+  }
+  .contest img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 500px) and (max-width: 699px) {
+  .score-board {
+    width: 500px;
+  }
+  .contest {
+    width: 500px;
+  }
+  .contest img {
+    width: 200px;
+    height: 200px;
+  }
+} ;
